@@ -1,0 +1,77 @@
+.el-button {
+  border-radius: 100px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 24px;
+  font-size: 12px;
+  color: $primary_color;
+  background: #fff;
+  border-color: #fff;
+  &.is-plain {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    &:hover {
+      background: transparent;
+    }
+  }
+  i {
+    margin-right: 5px;
+  }
+}
+
+@mixin buttonStyle ($theme) {
+  color: #fff;
+  background: $theme;
+  border-color: $theme;
+  &:hover, &:focus {
+    background: lighten($theme, 7%);
+    border-color: lighten($theme, 7%);
+    color: #fff;
+  }
+  &:active {
+    background: darken($theme, 7%);
+    border-color: darken($theme, 7%);
+  }
+  &.is-disabled {
+    background: lighten($theme, 20%) !important;
+    border-color: lighten($theme, 20%) !important;
+    color: #fff !important;
+  }
+  &.is-plain {
+    border-color: $theme;
+    background: transparent;
+    &:hover, &:focus {
+      border-color: lighten($theme, 7%);
+      background: transparent;
+    }
+    &:active {
+      border-color: darken($theme, 7%);
+      background: darken($theme, 7%);
+    }
+  }
+}
+
+.el-button--default {
+  @include buttonStyle($default_color)
+}
+
+.el-button--primary {
+  @include buttonStyle($primary_color)
+}
+
+.el-button--success {
+  @include buttonStyle($success_color)
+}
+
+.el-button--warning {
+  @include buttonStyle($warning_color)
+}
+
+.el-button--danger {
+  @include buttonStyle($error_color)
+}
+
+.el-button--info {
+  @include buttonStyle($info_color)
+}

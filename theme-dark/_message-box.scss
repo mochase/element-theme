@@ -1,0 +1,30 @@
+.el-message-box {
+  background-color: $bg_light;
+  border-radius: 10px;
+  border: none;
+  padding: 27px 35px;
+  width: 500px;
+  &--md {
+    width: 640px;
+  }
+  &--lg {
+    width: 860px;
+  }
+  .el-message-box__header {
+    .el-message-box__title {
+      color: $font_light;
+    }
+    .el-message-box__headerbtn .el-message-box__close {
+      color: $font_light;
+    }
+  }
+  .el-message-box__content {
+    padding: 30px 15px;
+    color: $font_normal;
+  }
+  .el-message-box__btns {
+    .el-button {
+      width: 100px;
+    }
+  }
+}

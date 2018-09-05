@@ -1,0 +1,20 @@
+/*
+  与 el-button 配合使用,可用于显示操作菜单
+*/
+.el-popover {
+  background: $bg_light;
+  border-color: $bg_light;
+  padding: 6px 0;
+  .el-button {
+    border-radius: 0;
+    width: 100%;
+    margin-left: 0 !important;
+    background: transparent;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    &:hover {
+      background: $bg_normal;
+    }
+  }
+}

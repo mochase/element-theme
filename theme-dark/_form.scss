@@ -1,0 +1,14 @@
+.el-form {
+  .el-form-item {
+    margin-bottom: 30px;
+    .el-form-item__content {
+      line-height: 30px;
+    }
+    .el-form-item__label {
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 0.34px;
+      color: $font_light--2;
+    }
+  }
+}

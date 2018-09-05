@@ -1,0 +1,42 @@
+.el-pagination {
+  text-align: right;
+  padding-right: 0;
+  margin-right: -5px;
+  color: $font_light;
+  &__total {
+    height: 35.5px !important;
+    line-height: 35.5px !important;
+    font-size: 14px !important;
+    color: $font_light;
+  }
+  .btn-prev, .btn-next {
+    background: transparent;
+    color: $font_light;
+    height: 35.5px;
+    line-height: 35.5px;
+    font-size: 14px;
+    &:disabled {
+      background: transparent;
+      color: $font_normal;
+    }
+  }
+  .el-pager {
+    background: transparent;
+    li {
+      background: transparent;
+      height: 35.5px;
+      line-height: 35.5px;
+      margin: 0 4px;
+      font-size: 14px;
+      &.btn-quickprev, &.btn-quicknext {
+        color: $font_light;
+      }
+      &.active {
+        border-radius: 100px;
+        background: $primary_color;
+        color: $font_light;
+        position: relative;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.el-dialog {
+  background-color: $bg_light;
+  .el-dialog__header {
+    .el-dialog__title {
+      color: $font_light;
+    }
+    .el-dialog__headerbtn .el-dialog__close {
+      color: $font_light;
+    }
+  }
+  .el-dialog__footer {
+    .el-button {
+      width: 130px;
+    }
+  }
+}

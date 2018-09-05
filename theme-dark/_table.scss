@@ -1,0 +1,30 @@
+.el-table {
+  padding: 25px 40px;
+  background-color: $bg_normal;
+  color: $font_light;
+  thead {
+    color: $font_light;
+  }
+  &::before {
+    background: none;
+  }
+  tr, th {
+    background-color: $bg_normal;
+  }
+  th.is-leaf, td {
+    border-bottom: 1px solid $font-dark--2;
+  }
+  .el-table__expanded-cell {
+    background-color: $bg_normal;
+  }
+  .el-table__expand-icon {
+    i {
+      color: $primary_color;
+      font-weight: 700;
+    }
+  }
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: $bg_dark--2;
+}

@@ -1,0 +1,14 @@
+/*
+  el-textarea
+*/
+
+.el-textarea {
+  .el-textarea__inner {
+    background: transparent;
+    border: 1px solid $default_color;
+    outline: none;
+    height: 100%;
+    min-height: 105px !important;
+    color: $font_light--2;
+  }
+}

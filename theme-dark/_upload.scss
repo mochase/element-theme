@@ -1,0 +1,20 @@
+/*
+  el-upload
+  简单更改了文件列表的样式
+*/
+.el-upload-list--text {
+  color: #B4B3BC;
+  .el-upload-list__item {
+    color: #B4B3BC;
+    & > * {
+      line-height: 20px;
+      height: 20px;
+    }
+  }
+  .el-upload-list__item:hover {
+    background-color: transparent;
+  }
+  .el-icon-close {
+    color: #B4B3BC;
+  }
+}

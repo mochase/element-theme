@@ -1,0 +1,17 @@
+/*
+  仅覆写了 simple steps 的样式
+*/
+.el-steps {
+  &--simple {
+    background-color: $bg_normal;
+    .el-step.is-simple .el-step__arrow::before, .el-step.is-simple .el-step__arrow::after {
+      background-color: $primary_color;
+    }
+    .el-step__head {
+      display: none;
+    }
+    .el-step.is-simple .el-step__title {
+      font-size: 14px;
+    }
+  }
+}

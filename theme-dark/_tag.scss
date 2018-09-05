@@ -1,0 +1,38 @@
+/*
+  el-tag
+  添加了自定义类 with-priority-${n}, 赋予了四种优先级情景色
+*/
+
+.el-tag {
+  height: 25px;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  border-radius: 100px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: rgba(129, 127, 139, 0.7);
+  border: solid 1px #817f8b;
+  &.with-priority-1 {
+    background-color: rgba(129, 127, 139, 0.7);
+    border: solid 1px #817f8b;
+  }
+  &.with-priority-2 {
+    background-color: rgba(190, 178, 69, 0.7);
+    border: solid 1px #beb245;
+  }
+  &.with-priority-3 {
+    background-color: rgba(251, 131, 129, 0.7);
+    border: solid 1px #fb8381;
+  }
+  &.with-priority-4 {
+    background-color: rgba(225, 70, 78, 0.7);
+    border: solid 1px #e1464e;
+  }
+  .el-tag__close {
+    color: #fff !important;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

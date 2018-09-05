@@ -1,0 +1,113 @@
+/*
+自定义工具类
+*/
+
+// 搜索框
+.search-bar {
+  border-radius: 100px;
+  .el-input {
+    .el-input__inner {
+      background: $bg_dark;
+      border: none;
+      color: $font_dark;
+    }
+    .el-input__icon {
+      color: $primary_color;
+      cursor: pointer;
+    }
+  }
+}
+
+// 下拉添加组(select + button)
+.select-group {
+  .el-select {
+    width: 230px;
+    line-height: 30px;
+    .el-input {
+      .el-input__inner {
+        border-radius: 4px 0 0 4px;
+        height: 30px !important;
+      }
+      .el-select__caret {
+        font-size: 12px;
+      }
+    }
+  }
+  .el-button {
+    border-radius: 0 4px 4px 0;
+    width: 35px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background: $bg_light;
+    color: $primary_color;
+    border: none;
+    position: relative;
+    transform: translateY(-1px);
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      height: 18px;
+      border-right: 1px solid $primary_color;
+    }
+  }
+}
+
+// 简单菜单, 与 el-popover 配合使用, trigger 时显示可用操作
+.circle-btn-wrapper {
+  padding: 6px 10px;
+  width: 24px;
+  display: inline-block;
+  cursor: pointer;
+  .circle-btn-indicator {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    position: relative;
+    background: $primary_color;
+    &::after, &::before {
+      background: $primary_color;
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      content: '';
+      position: absolute;
+      left: 0
+    }
+    &::before {
+      top: -9px;
+    }
+    &::after {
+      top: 9px;
+    }
+  }
+}
+
+// 给元素添加情景色,来表示它的当前状态
+.width-status {
+  position: relative;
+  margin-left: 20px;
+  &::before {
+    content: '';
+    display: block;
+    z-index: 99;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  &.width-status-success::before {
+    background: $success_color;
+  }
+  &.width-status-primary::before {
+    background: $primary_color;
+  }
+  &.width-status-warning::before {
+    background: $warning_color;
+  }
+}

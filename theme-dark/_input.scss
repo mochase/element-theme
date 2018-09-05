@@ -1,0 +1,52 @@
+/*
+  el-input
+  添加了自定义类 no-border, input 无边框时使用 
+*/
+
+.el-input {
+  height: 30px;
+  .el-input__inner {
+    background: transparent;
+    border: 1px solid $default_color;
+    outline: none;
+    height: 100%;
+    color: $font_light--2;
+    &::-webkit-input-placeholder{
+      color:$font_dark;
+      font-size: 12px;
+    }
+    &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+      color:$font_dark;
+      font-size: 12px;
+    }
+    &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+      color:$font_dark;
+      font-size: 12px;
+    }
+    &:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+      color:$font_dark;
+      font-size: 12px;
+    }
+  }
+
+  .el-input__suffix {
+    .el-input__validateIcon {
+      line-height: 30px;
+    }
+  }
+
+  &.is-disabled {
+    .el-input__inner {
+      border: 1px solid $default_color;
+      background-color: rgba(0,0,0,0.3);
+      color: $font_dark;
+    }
+  }
+  
+  &.no-border {
+    .el-input__inner {
+      border: none;
+      background: $bg_normal;
+    }
+  }
+}

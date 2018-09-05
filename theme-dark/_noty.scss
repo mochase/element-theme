@@ -1,0 +1,62 @@
+/*
+  noty 组件的 theme
+*/
+
+.noty_layout {
+  .noty_theme__metroui {
+    border: 1px solid #817f8b;
+    background: #817f8b;
+    display: flex;
+    border-radius: 4px;
+    &::before {
+      font-family: "FontAwesome";
+      width: 50px;
+      content: "\f05a";
+      font-size: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      background: transparent;
+      padding-left: 15px;
+    }
+    .noty_body {
+      background: $bg_normal;
+      font-size: 12px !important;
+      flex: 1;
+    }
+
+    &.noty_type__error {
+      background: $error_color;
+      border-color: $error_color;
+      &::before {
+        content: "\f057"
+      }
+    }
+    &.noty_type__success {
+      background: $success_color;
+      border-color: $success_color;
+      &::before {
+        content: "\f058"
+      } 
+    }
+    &.noty_type__warning {
+      background: $warning_color;
+      border-color: $warning_color;
+      &::before {
+        content: "\f06a"
+      }
+    }
+    &.noty_type__info {
+      background: #817f8b;
+      border-color: #817f8b;
+      &::before {
+        content: "\f05a"
+      }
+    }
+    &.noty_type__alert {
+      // default
+      color: #CFD3E2;
+      background: #817f8b;
+      border-color: #817f8b;
+    }
+  }
+}

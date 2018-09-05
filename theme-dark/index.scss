@@ -1,0 +1,38 @@
+@import "./variables";
+
+/* elementUI variables */
+$--color-primary: $primary_color;
+$--color-success: $success_color;
+$--color-danger: $salmon;
+$--color-info: $info_color;
+$--color-warning: $warning_color;
+// buttons
+$--button-danger-border: $error_color;
+$--button-danger-fill: $error_color;
+// popover
+$--popover-border-color: $bg_light;
+$--popover-fill: $bg_light;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+@import "./button";
+@import "./card";
+@import "./dialog";
+@import "./form";
+@import "./input";
+@import "./menu";
+@import "./message-box";
+@import "./noty";
+@import "./popover";
+@import "./select";
+@import "./steps";
+@import "./table";
+@import "./tag";
+@import "textarea";
+@import "./upload";
+@import "./pagination";
+@import "./utils";
+@import "./others";

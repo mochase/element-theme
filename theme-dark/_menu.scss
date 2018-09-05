@@ -1,0 +1,67 @@
+/*
+  使用 el-menu 时不需要再添加与样式相关的 props
+*/ 
+.el-menu {
+  border-radius: 0;
+  border-right: none;
+  background: transparent !important;
+  color: $font_dark;
+  i {
+    margin-right: 7px;
+    color: $font_dark;
+  }
+  .el-menu-item {
+    font-size: 18px;
+    padding-left: 50px !important;
+    background-color: transparent !important;
+    color: $font_dark;
+    border-left: 3px solid transparent;
+    &:hover, &:active {
+      i {
+        color: lighten($font_dark, 10%);
+      }
+      span {
+        color: lighten($font_dark, 10%);
+      }
+    }
+    &.is-active {
+      border-left: 3px solid #eee;
+      &:hover, &:active {
+        background: transparent !important;
+      }
+      * {
+        color: #fff !important; 
+      }
+    }
+  }
+
+  .el-submenu {
+    .el-menu-item {
+      padding-left: 75px !important;
+    }
+    .el-submenu__title {
+      color: $font_dark;
+      font-size: 18px;
+      padding-left: 50px !important;
+      &:hover {
+        background-color: transparent !important;
+        i {
+          color: lighten($font_dark, 10%);
+        }
+        span {
+          color: lighten($font_dark, 10%);
+        }
+      }
+    }
+    &.is-active {
+      .el-submenu__title {
+        i {
+          color: #7961F1 !important;
+        }
+        span {
+          color: #7961f1 !important;
+        }
+      }
+    }
+  }
+}
