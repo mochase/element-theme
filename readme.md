@@ -1,4 +1,4 @@
-# element-ui 的一个 dark 主题,主题色是基佬紫
+# element-ui 的一个 dark 主题,主题色是基佬紫
 
 ## 如何使用
 
